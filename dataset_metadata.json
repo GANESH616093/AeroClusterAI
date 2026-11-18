@@ -1,0 +1,23 @@
+{
+  "dataset_name": "AeroCluster Synthetic Multi-Drone Telemetry Dataset",
+  "project_id": "SIH26057",
+  "purpose": "Prototype/testing for PCA compression, trajectory-aware clustering, visualization, and anomaly scoring",
+  "source": "Synthetic data generated for this project; not real flight telemetry",
+  "sampling_rate_hz": 1,
+  "drone_count": 10,
+  "samples_per_drone": 180,
+  "total_rows": 1800,
+  "approx_duration_per_drone_seconds": 180,
+  "origin_coordinates": {
+    "latitude": 31.25,
+    "longitude": 75.7,
+    "note": "Illustrative coordinate origin; trajectories are simulated"
+  },
+  "labels": {
+    "coordinated_survey": "D01-D06: similar sweep/survey behaviour with lane offsets",
+    "independent_route": "D07-D08: distinct independent curved paths",
+    "speed_altitude_deviation": "D09: simulated speed and altitude deviation injected at t=65..105",
+    "route_deviation": "D10: simulated path deviation injected at t=80..125"
+  },
+  "important_caveat": "Labels are scenario ground truth for software testing, not expert-validated real-world anomaly labels. Do not report performance on this synthetic dataset as real-world accuracy."
+}
